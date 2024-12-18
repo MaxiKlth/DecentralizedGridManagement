@@ -1,0 +1,23 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Energy Agent
+Bundle-SymbolicName: net.peak.agent.energyTradingAgent
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: PEAK-Consortium
+Automatic-Module-Name: net.peak.agent.energyTradingAgent
+Bundle-RequiredExecutionEnvironment: JavaSE-11
+Bundle-ActivationPolicy: lazy
+Service-Component: OSGI-INF/awbClassLoadService.xml
+Require-Bundle: de.enflexit.common,
+ de.enflexit.ea.core,
+ de.enflexit.ea.core.dataModel,
+ net.peak.datamodel,
+ org.agentgui.core,
+ org.agentgui.lib.jade,
+ de.enflexit.jade.tools,
+ de.enflexit.ea.core.blackboard;bundle-version="1.0.0"
+Import-Package: de.enflexit.jade.phonebook,
+ de.enflexit.jade.phonebook.behaviours
+Export-Package: net.peak.agent.energyTradingAgent,
+ net.peak.agent.energyTradingAgent.behaviour,
+ net.peak.agent.energyTradingAgent.classLoadService

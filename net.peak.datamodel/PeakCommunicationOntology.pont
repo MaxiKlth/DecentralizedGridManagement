@@ -1,0 +1,1379 @@
+; Mon Mar 13 09:02:58 CET 2023
+; 
+;+ (version "3.3.1")
+;+ (build "Build 430")
+
+
+(defclass %3ACLIPS_TOP_LEVEL_SLOT_CLASS "Fake class to save top-level slot information"
+	(is-a USER)
+	(role abstract)
+	(single-slot product
+		(type INSTANCE)
+;+		(allowed-classes)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot longValue
+		(type FLOAT)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot quarterHourStatus
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot actuatorFeedback
+		(type INSTANCE)
+;+		(allowed-classes ActuatorFeedback)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot duration
+		(type INTEGER)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot longitude
+		(type FLOAT)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot negotiatedEnergyList
+		(type INSTANCE)
+;+		(allowed-classes EnergyAmount)
+		(create-accessor read-write))
+	(single-slot description
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot createdDate
+		(type INSTANCE)
+;+		(allowed-classes LongValue)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot maximumPurchasePrice
+;+		(comment "The maximal purchase price of the requested flexibility determined by the grid operator")
+		(type FLOAT)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot color
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot location
+		(type INSTANCE)
+;+		(allowed-classes Location)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot ReactionTime
+;+		(comment "reaction time in [Vs]")
+		(type FLOAT)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot orderBookRequest
+		(type INSTANCE)
+;+		(allowed-classes OrderBookRequest)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot localTransactionID
+		(type INTEGER)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot ToleranceUpper
+;+		(comment "Positive Voltage Tolerance in [%]")
+		(type FLOAT)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot timeStamp
+		(type SYMBOL)
+;+		(allowed-parents LongValue)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot flexibilityRequest
+		(type INSTANCE)
+;+		(allowed-classes FlexibilityRequest)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot deliveredEnergy
+		(type INSTANCE)
+;+		(allowed-classes EnergyAmount)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot inverterSetpoints
+		(type INSTANCE)
+;+		(allowed-classes InverterSetpoints)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot counterBid
+		(type INTEGER)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot powerFlow
+		(type INSTANCE)
+;+		(allowed-classes PowerFlow)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot maxAskPrice
+		(type FLOAT)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot maxActivePowerFeedIn
+		(type FLOAT)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot timeCycleStart
+		(type INSTANCE)
+;+		(allowed-classes LongValue)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot adjustment
+		(type INSTANCE)
+;+		(allowed-classes PowerFlow)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot unit
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot TradedFlexibilityList
+		(type INSTANCE)
+;+		(allowed-classes PowerFlow)
+		(create-accessor read-write))
+	(single-slot gridStateForecastServerURL
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot gridTrafficLightRealTime
+		(type INSTANCE)
+;+		(allowed-classes GridTrafficLightRealTime)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot agentAID
+		(type INSTANCE)
+;+		(allowed-classes)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot longAsString
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot setpointP2
+		(type INSTANCE)
+;+		(allowed-classes ActivePowerSetpointSinglePhaseAcl)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot trafficLight
+		(type INSTANCE)
+;+		(allowed-classes TrafficLight)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot latitude
+		(type FLOAT)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot peakUserID
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot residualRequest
+		(type INSTANCE)
+;+		(allowed-classes)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot price
+		(type FLOAT)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot trafficLightForecast
+		(type INSTANCE)
+;+		(allowed-classes TrafficLight)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot sumBidAmount
+		(type FLOAT)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot floatValue
+		(type FLOAT)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot L2StepDown
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot peakAgentID
+		(type INSTANCE)
+;+		(allowed-classes AID)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot setpointP3
+		(type INSTANCE)
+;+		(allowed-classes ActivePowerSetpointSinglePhaseAcl)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot forecastSchedule
+		(type INSTANCE)
+;+		(allowed-classes ForecastSchedule)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot peakMember
+		(type INSTANCE)
+;+		(allowed-classes PeakMember)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot energyLabel
+		(type INSTANCE)
+;+		(allowed-classes EnergyLabel)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot peakMemberID
+		(type INTEGER)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot time
+		(type INSTANCE)
+;+		(allowed-classes LongValue)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot gridMarketRequest
+		(type INSTANCE)
+;+		(allowed-classes GridMarketInteraction)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot PeakCommunicationOntology_Slot_0
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot maxActivePowerDemand
+		(type FLOAT)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot timeSeries
+		(type SYMBOL)
+;+		(allowed-parents TimeSeries)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot minAskPrice
+		(type FLOAT)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot flexibilityResult
+		(type INSTANCE)
+;+		(allowed-classes FlexibilityResult)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot setpoint
+		(type INSTANCE)
+;+		(allowed-classes PowerFlow)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot timestamp
+		(type INSTANCE)
+;+		(allowed-classes LongValue)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot setpointP1
+		(type INSTANCE)
+;+		(allowed-classes ActivePowerSetpointSinglePhaseAcl)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot L2StepUp
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot sumAskAmount
+		(type FLOAT)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot timeSlotStart
+		(type INSTANCE)
+;+		(allowed-classes LongValue)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot energyTransaction
+		(type INSTANCE)
+;+		(allowed-classes EnergyTransaction)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot PeakCommunicationOntology_Slot_20000
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot intValue
+		(type INTEGER)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot AllStepUp
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot energyResult
+		(type INSTANCE)
+;+		(allowed-classes EnergyResult)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot L3StepDown
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot transactionPrice
+		(type FLOAT)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot avgBidPrice
+		(type FLOAT)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot setpointS123
+		(type INSTANCE)
+;+		(allowed-classes ApparentPowerSetpointTriPhaseAcl)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot gridMarketResult
+		(type INSTANCE)
+;+		(allowed-classes GridMarketResult)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot label
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot setpointPf123
+		(type INSTANCE)
+;+		(allowed-classes PowerFactorSetpointTriPhaseAcl)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot gridTrafficLightForecast
+		(type INSTANCE)
+;+		(allowed-classes GridTrafficLightForecast)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot changedDate
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot avgAskPrice
+		(type FLOAT)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot L1StepDown
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot orderBook
+		(type INSTANCE)
+;+		(allowed-classes OrderBook)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot flexibilityTransaction
+		(type INSTANCE)
+;+		(allowed-classes FlexibilityTransaction)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot PeakCommunicationOntology_Slot_20
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot reportedSetpoint
+		(type FLOAT)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot unitValue
+		(type INSTANCE)
+;+		(allowed-classes UnitValue)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot PeakCommunicationOntology_Slot_25
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot inverterSetpointsList
+		(type INSTANCE)
+;+		(allowed-classes InverterSetpoints)
+		(create-accessor read-write))
+	(single-slot nodeID
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Mode
+;+		(comment "0: Auto Mode\n1: Manual Mode")
+		(type INTEGER)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Impedance
+;+		(comment "impedance in [Ohm]")
+		(type FLOAT)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot timeSeriesValueList
+		(type INSTANCE)
+;+		(allowed-classes TimeSeriesValue)
+		(create-accessor read-write))
+	(single-slot reportedActivePower
+		(type FLOAT)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot L3StepUp
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot L1StepUp
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot minBidPrice
+		(type FLOAT)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot powerAdjustment
+		(type INSTANCE)
+;+		(allowed-classes PowerAdjustment)
+		(create-accessor read-write))
+	(single-slot updatePowerForecastServerURL
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot ToleranceLower
+;+		(comment "Negative Voltage Tolerance in [%]")
+		(type FLOAT)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot AllStepDown
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot actuatorSetpoint
+		(type INSTANCE)
+;+		(allowed-classes ActuatorSetpoint)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot iterationCount
+		(type INTEGER)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot PeakCommunicationOntology_Slot_10000
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot residualResult
+		(type INSTANCE)
+;+		(allowed-classes ResidualResult)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot purchasePrice
+		(type FLOAT)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot gridID
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot counterAsk
+		(type INTEGER)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot forecastScheduleTable
+		(type INSTANCE)
+;+		(allowed-classes ForecastSchedule)
+		(create-accessor read-write))
+	(single-slot energyAmount
+		(type INSTANCE)
+;+		(allowed-classes EnergyAmount)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot value
+		(type FLOAT)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot allHardwareSetpoints
+		(type INSTANCE)
+;+		(allowed-classes)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot VSetpoint
+;+		(comment "Voltage setpoint for automatic modus [V]")
+		(type FLOAT)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot powerAdjustmentIndividual
+		(type INSTANCE)
+;+		(allowed-classes PowerAdjustment)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot loadbankSetpointsList
+		(type INSTANCE)
+;+		(allowed-classes LoadbankSetpoints)
+		(create-accessor read-write))
+	(single-slot lvrSetpoints
+		(type INSTANCE)
+;+		(allowed-classes LvrSetpoints)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot uuid
+		(type FLOAT)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot loadbankSetpoints
+		(type INSTANCE)
+;+		(allowed-classes LoadbankSetpoints)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass ProsumerToMarket
+	(is-a AgentAction)
+	(role abstract))
+
+(defclass GetOrderBookRequest
+	(is-a ProsumerToMarket)
+	(role concrete)
+	(single-slot orderBookRequest
+		(type INSTANCE)
+;+		(allowed-classes OrderBookRequest)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass PutOrderBook
+	(is-a ProsumerToMarket)
+	(role concrete)
+	(single-slot orderBook
+		(type INSTANCE)
+;+		(allowed-classes OrderBook)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass PutTradingTransaction
+	(is-a ProsumerToMarket)
+	(role abstract))
+
+(defclass PutEnergyTransaction
+	(is-a PutTradingTransaction)
+	(role concrete)
+	(single-slot energyTransaction
+		(type INSTANCE)
+;+		(allowed-classes EnergyTransaction)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass PutFlexibilityTransaction
+	(is-a PutTradingTransaction)
+	(role concrete)
+	(single-slot flexibilityTransaction
+		(type INSTANCE)
+;+		(allowed-classes FlexibilityTransaction)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass PutFlexibilityRequest
+	(is-a PutTradingTransaction)
+	(role concrete)
+	(single-slot flexibilityRequest
+		(type INSTANCE)
+;+		(allowed-classes FlexibilityRequest)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass PutTradingResult
+	(is-a ProsumerToMarket)
+	(role abstract))
+
+(defclass PutFlexibilityResult
+	(is-a PutTradingResult)
+	(role concrete)
+	(single-slot flexibilityResult
+		(type INSTANCE)
+;+		(allowed-classes FlexibilityResult)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass PutEnergyResult
+	(is-a PutTradingResult)
+	(role concrete)
+	(single-slot energyResult
+		(type INSTANCE)
+;+		(allowed-classes EnergyResult)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass PutResidualProcurementResult
+	(is-a PutTradingResult)
+	(role concrete)
+	(single-slot residualResult
+		(type INSTANCE)
+;+		(allowed-classes ResidualResult)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass GridToMarket
+	(is-a AgentAction)
+	(role abstract))
+
+(defclass PutFlexibilityTableRequest "Auschreibungstabelle wird bepreist und an den Markt gesendet"
+	(is-a GridToMarket)
+	(role concrete)
+	(single-slot gridMarketRequest
+		(type INSTANCE)
+;+		(allowed-classes GridMarketInteraction)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass PutMarketResult
+	(is-a GridToMarket)
+	(role concrete)
+	(single-slot gridMarketResult
+		(type INSTANCE)
+;+		(allowed-classes GridMarketResult)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass PutTrafficLightRealTimeMarket "Echtzeit Ampelstatus des Netzes wird an den Markt gesendet"
+	(is-a GridToMarket)
+	(role concrete)
+	(single-slot gridTrafficLightRealTime
+		(type INSTANCE)
+;+		(allowed-classes GridTrafficLightRealTime)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass PutTrafficLightForecastMarket "Prognostizierter Ampelstatus wird an den Markt gesendet"
+	(is-a GridToMarket)
+	(role concrete)
+	(single-slot gridTrafficLightForecast
+		(type INSTANCE)
+;+		(allowed-classes GridTrafficLightForecast)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass PeakPlatformInteraction
+	(is-a AgentAction)
+	(role abstract))
+
+(defclass PeakMemberInteraction
+	(is-a PeakPlatformInteraction)
+	(role abstract))
+
+(defclass PeakMemberRegistration
+	(is-a PeakMemberInteraction)
+	(role concrete)
+	(single-slot peakMember
+		(type INSTANCE)
+;+		(allowed-classes PeakMember)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass PeakMemberAnswer
+	(is-a PeakMemberInteraction)
+	(role concrete)
+	(single-slot forecastSchedule
+		(type INSTANCE)
+;+		(allowed-classes ForecastSchedule)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass PeakMemberRequest
+	(is-a PeakMemberInteraction)
+	(role concrete)
+	(single-slot forecastSchedule
+		(type INSTANCE)
+;+		(allowed-classes ForecastSchedule)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass GridToPlatform
+	(is-a AgentAction)
+	(role abstract))
+
+(defclass PutForecastSchedule "Liste von Leistungsprognosen aller PEAK-Teilnehmer wird an den Netzagent gesendet"
+	(is-a GridToPlatform)
+	(role concrete)
+	(multislot forecastScheduleTable
+		(type INSTANCE)
+;+		(allowed-classes ForecastSchedule)
+		(create-accessor read-write)))
+
+(defclass PutTrafficLightRealTimePlatform "Echtzeit Ampelstatus des Netzes wird an die Plattform gesendet"
+	(is-a GridToPlatform)
+	(role concrete)
+	(single-slot gridTrafficLightRealTime
+		(type INSTANCE)
+;+		(allowed-classes GridTrafficLightRealTime)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass PutTrafficLightForecastPlatform "Prognostizierter Ampelstatus wird an die Plattform gesendet"
+	(is-a GridToPlatform)
+	(role concrete)
+	(single-slot gridTrafficLightForecast
+		(type INSTANCE)
+;+		(allowed-classes GridTrafficLightForecast)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass GridToProsumer
+	(is-a AgentAction)
+	(role abstract))
+
+(defclass PutActuatorFeedback "Nach dem Empfangen eines Setpoints versucht der Aktor diesen umzusetzten und sendet anschliessend ein Feedback zurück an das Netzautomatisierungssystem"
+	(is-a GridToProsumer)
+	(role concrete)
+	(single-slot actuatorFeedback
+		(type INSTANCE)
+;+		(allowed-classes ActuatorFeedback)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass PutActuatorSetpoint "Senden eines Setpoints an einen Aktor im Netzengpassfall"
+	(is-a GridToProsumer)
+	(role concrete)
+	(single-slot actuatorSetpoint
+		(type INSTANCE)
+;+		(allowed-classes ActuatorSetpoint)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass PlattformToSgl
+	(is-a AgentAction)
+	(role abstract))
+
+(defclass PutInverterSetpoints "Senden von"
+	(is-a PlattformToSgl)
+	(role concrete)
+	(single-slot inverterSetpoints
+		(type INSTANCE)
+;+		(allowed-classes InverterSetpoints)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass PutLoadbankSetpoints
+	(is-a PlattformToSgl)
+	(role concrete)
+	(single-slot loadbankSetpoints
+		(type INSTANCE)
+;+		(allowed-classes LoadbankSetpoints)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass PutAllHardwareSetpoints
+	(is-a PlattformToSgl)
+	(role concrete)
+	(multislot loadbankSetpointsList
+		(type INSTANCE)
+;+		(allowed-classes LoadbankSetpoints)
+		(create-accessor read-write))
+	(multislot inverterSetpointsList
+		(type INSTANCE)
+;+		(allowed-classes InverterSetpoints)
+		(create-accessor read-write)))
+
+(defclass PutLvrSetpoints
+	(is-a PlattformToSgl)
+	(role concrete)
+	(single-slot lvrSetpoints
+		(type INSTANCE)
+;+		(allowed-classes LvrSetpoints)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass ForecastSchedule
+	(is-a Concept)
+	(role concrete)
+	(single-slot timeSeries
+		(type SYMBOL)
+;+		(allowed-parents TimeSeries)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass LongValue
+	(is-a Concept)
+	(role concrete)
+	(single-slot longValue
+		(type FLOAT)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot longAsString
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass TimeSeries
+	(is-a Concept)
+	(role concrete)
+	(multislot timeSeriesValueList
+		(type INSTANCE)
+;+		(allowed-classes TimeSeriesValue)
+		(create-accessor read-write)))
+
+(defclass TimeSeriesValue
+	(is-a Concept)
+	(role abstract)
+	(single-slot timeStamp
+		(type SYMBOL)
+;+		(allowed-parents LongValue)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot unitValue
+		(type INSTANCE)
+;+		(allowed-classes UnitValue)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass TimeSeriesValueFloat
+	(is-a TimeSeriesValue)
+	(role concrete)
+	(single-slot unitValue
+		(type INSTANCE)
+;+		(allowed-classes UnitValueFloat)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass TimeSeriesInteger
+	(is-a TimeSeriesValue)
+	(role concrete)
+	(single-slot unitValue
+		(type INSTANCE)
+;+		(allowed-classes UnitValue UnitValueInteger)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass UnitValue
+	(is-a Concept)
+	(role abstract)
+	(single-slot unit
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass UnitValueFloat
+	(is-a UnitValue)
+	(role concrete)
+	(single-slot floatValue
+		(type FLOAT)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass EnergyAmount
+	(is-a UnitValueFloat)
+	(role concrete))
+
+(defclass PowerFlow
+	(is-a UnitValueFloat)
+	(role concrete))
+
+(defclass UnitValueInteger
+	(is-a UnitValue)
+	(role concrete)
+	(single-slot intValue
+		(type INTEGER)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass EnergyLabel
+	(is-a Concept)
+	(role concrete)
+	(single-slot label
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass Location "WGS84 Coordinate"
+	(is-a Concept)
+	(role concrete)
+	(single-slot longitude
+		(type FLOAT)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot latitude
+		(type FLOAT)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass PeakMember
+	(is-a Concept)
+	(role concrete)
+	(single-slot peakMemberID
+		(type INTEGER)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot gridID
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot peakAgentID
+		(type INSTANCE)
+;+		(allowed-classes AID)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot peakUserID
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot location
+		(type INSTANCE)
+;+		(allowed-classes Location)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot nodeID
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass ProsumerMarketInteraction
+	(is-a Concept)
+	(role abstract)
+	(single-slot timeSlotStart
+		(type INSTANCE)
+;+		(allowed-classes LongValue)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot localTransactionID
+		(type INTEGER)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot peakMemberID
+		(type INTEGER)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot transactionPrice
+		(type FLOAT)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass ProsumerMarketTransaction
+	(is-a ProsumerMarketInteraction)
+	(role abstract)
+	(single-slot energyLabel
+		(type INSTANCE)
+;+		(allowed-classes EnergyLabel)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot timeCycleStart
+		(type INSTANCE)
+;+		(allowed-classes LongValue)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot iterationCount
+		(type INTEGER)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass EnergyTransaction
+	(is-a ProsumerMarketTransaction)
+	(role concrete)
+	(multislot negotiatedEnergyList
+		(type INSTANCE)
+;+		(allowed-classes EnergyAmount)
+		(create-accessor read-write))
+	(single-slot energyAmount
+		(type INSTANCE)
+;+		(allowed-classes EnergyAmount)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass FlexibilityTransaction "Additional Variable to EnergyTransaction"
+	(is-a ProsumerMarketTransaction)
+	(role concrete)
+	(single-slot powerFlow
+		(type INSTANCE)
+;+		(allowed-classes PowerFlow)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot TradedFlexibilityList
+		(type INSTANCE)
+;+		(allowed-classes PowerFlow)
+		(create-accessor read-write)))
+
+(defclass MarketProsumerResult
+	(is-a ProsumerMarketInteraction)
+	(role abstract))
+
+(defclass EnergyResult
+	(is-a MarketProsumerResult)
+	(role concrete)
+	(single-slot deliveredEnergy
+		(type INSTANCE)
+;+		(allowed-classes EnergyAmount)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass FlexibilityResult
+	(is-a MarketProsumerResult)
+	(role concrete)
+	(single-slot powerAdjustmentIndividual
+		(type INSTANCE)
+;+		(allowed-classes PowerAdjustment)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass ResidualResult
+	(is-a MarketProsumerResult)
+	(role concrete)
+	(single-slot deliveredEnergy
+		(type INSTANCE)
+;+		(allowed-classes EnergyAmount)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass PowerAdjustment
+	(is-a Concept)
+	(role concrete)
+	(single-slot adjustment
+		(type INSTANCE)
+;+		(allowed-classes PowerFlow)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot nodeID
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass TrafficLight
+	(is-a Concept)
+	(role concrete)
+	(single-slot color
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass GridMarketInteraction
+	(is-a Concept)
+	(role concrete)
+	(single-slot timeSlotStart
+		(type INSTANCE)
+;+		(allowed-classes LongValue)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot powerAdjustment
+		(type INSTANCE)
+;+		(allowed-classes PowerAdjustment)
+		(create-accessor read-write)))
+
+(defclass GridMarketRequest
+	(is-a GridMarketInteraction)
+	(role concrete)
+	(single-slot maximumPurchasePrice
+;+		(comment "The maximal purchase price of the requested flexibility determined by the grid operator")
+		(type FLOAT)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass GridMarketResult
+	(is-a GridMarketInteraction)
+	(role concrete)
+	(single-slot purchasePrice
+		(type FLOAT)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass GridPlatformInteraction
+	(is-a Concept)
+	(role concrete)
+	(single-slot trafficLight
+		(type INSTANCE)
+;+		(allowed-classes TrafficLight)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass GridTrafficLightRealTime "Echtzeit Ampelstatus des Netzes"
+	(is-a GridPlatformInteraction)
+	(role concrete))
+
+(defclass GridTrafficLightForecast "Prognostizierter Ampelstatus zum angegebenem Timeslot"
+	(is-a GridPlatformInteraction)
+	(role concrete)
+	(single-slot timeSlotStart
+		(type INSTANCE)
+;+		(allowed-classes LongValue)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass OrderBook
+	(is-a Concept)
+	(role concrete)
+	(single-slot timeSlotStart
+		(type INSTANCE)
+;+		(allowed-classes LongValue)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot quarterHourStatus
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot changedDate
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot sumBidAmount
+		(type FLOAT)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot counterBid
+		(type INTEGER)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot avgAskPrice
+		(type FLOAT)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot maxAskPrice
+		(type FLOAT)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot createdDate
+		(type INSTANCE)
+;+		(allowed-classes LongValue)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot counterAsk
+		(type INTEGER)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot minAskPrice
+		(type FLOAT)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot minBidPrice
+		(type FLOAT)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot sumAskAmount
+		(type FLOAT)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot avgBidPrice
+		(type FLOAT)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass FlexibilityRequest
+	(is-a Concept)
+	(role concrete)
+	(single-slot timeSlotStart
+		(type INSTANCE)
+;+		(allowed-classes LongValue)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot powerAdjustmentIndividual
+		(type INSTANCE)
+;+		(allowed-classes PowerAdjustment)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass OrderBookRequest
+	(is-a Concept)
+	(role concrete)
+	(single-slot timeSlotStart
+		(type INSTANCE)
+;+		(allowed-classes LongValue)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass MatlabApiConfiguration
+	(is-a Concept)
+	(role concrete)
+	(single-slot gridStateForecastServerURL
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot updatePowerForecastServerURL
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass ActuatorFeedback
+	(is-a Concept)
+	(role concrete)
+	(single-slot reportedActivePower
+		(type FLOAT)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot reportedSetpoint
+		(type FLOAT)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot timeStamp
+		(type SYMBOL)
+;+		(allowed-parents LongValue)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot maxActivePowerFeedIn
+		(type FLOAT)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot maxActivePowerDemand
+		(type FLOAT)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass ActuatorSetpoint
+	(is-a Concept)
+	(role concrete)
+	(single-slot setpoint
+		(type INSTANCE)
+;+		(allowed-classes PowerFlow)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot timeStamp
+		(type SYMBOL)
+;+		(allowed-parents LongValue)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass PlattformSglInteraction
+	(is-a Concept)
+	(role concrete))
+
+(defclass InverterSetpoints
+	(is-a PlattformSglInteraction)
+	(role concrete)
+	(single-slot setpointPf123
+		(type INSTANCE)
+;+		(allowed-classes PowerFactorSetpointTriPhaseAcl)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot uuid
+		(type FLOAT)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot setpointS123
+		(type INSTANCE)
+;+		(allowed-classes ApparentPowerSetpointTriPhaseAcl)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass LoadbankSetpoints
+	(is-a PlattformSglInteraction)
+	(role concrete)
+	(single-slot setpointP1
+		(type INSTANCE)
+;+		(allowed-classes ActivePowerSetpointSinglePhaseAcl)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot setpointP2
+		(type INSTANCE)
+;+		(allowed-classes ActivePowerSetpointSinglePhaseAcl)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot uuid
+		(type FLOAT)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot setpointP3
+		(type INSTANCE)
+;+		(allowed-classes ActivePowerSetpointSinglePhaseAcl)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass LvrSetpoints
+	(is-a PlattformSglInteraction)
+	(role concrete)
+	(single-slot Mode
+;+		(comment "0: Auto Mode\n1: Manual Mode")
+		(type INTEGER)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Impedance
+;+		(comment "impedance in [Ohm]")
+		(type FLOAT)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot L2StepDown
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot L1StepDown
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot L3StepUp
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot ReactionTime
+;+		(comment "reaction time in [Vs]")
+		(type FLOAT)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot L1StepUp
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot AllStepUp
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot ToleranceUpper
+;+		(comment "Positive Voltage Tolerance in [%]")
+		(type FLOAT)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot VSetpoint
+;+		(comment "Voltage setpoint for automatic modus [V]")
+		(type FLOAT)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot L3StepDown
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot L2StepUp
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot ToleranceLower
+;+		(comment "Negative Voltage Tolerance in [%]")
+		(type FLOAT)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot AllStepDown
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass ActivePowerSetpointSinglePhaseAcl
+	(is-a Concept)
+	(role concrete)
+	(single-slot value
+		(type FLOAT)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot timeStamp
+		(type SYMBOL)
+;+		(allowed-parents LongValue)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass ApparentPowerSetpointTriPhaseAcl
+	(is-a Concept)
+	(role concrete)
+	(single-slot value
+		(type FLOAT)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot timeStamp
+		(type SYMBOL)
+;+		(allowed-parents LongValue)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass PowerFactorSetpointTriPhaseAcl
+	(is-a Concept)
+	(role concrete)
+	(single-slot value
+		(type FLOAT)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot timeStamp
+		(type SYMBOL)
+;+		(allowed-parents LongValue)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))

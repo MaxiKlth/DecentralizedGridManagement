@@ -1,0 +1,323 @@
+; Mon Mar 13 09:02:58 CET 2023
+; 
+;+ (version "3.3.1")
+;+ (build "Build 430")
+
+([ActivePowerSetpointSinglePhaseAcl] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([ActuatorFeedback] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([ActuatorSetpoint] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([ApparentPowerSetpointTriPhaseAcl] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([EnergyAmount] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE)
+	(%3AJADE-JAVA-CODE "// Energy Amount in KWh"))
+
+([EnergyLabel] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE)
+	(%3AJADE-JAVA-CODE "public static String NUCLEAR = \"NuclearPower\";\npublic static String WIND= \"WindEnergy\";\npublic static String PHOTOVOLTAIC = \"PhotovoltaicEnergy\";\npublic static String BATTERY = \"Battery\";"))
+
+([EnergyResult] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([EnergyTransaction] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([FlexibilityRequest] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([FlexibilityResult] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([FlexibilityTransaction] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([ForecastSchedule] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([GetOrderBookRequest] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([GridMarketInteraction] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([GridMarketRequest] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([GridMarketResult] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([GridPlatformInteraction] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([GridToMarket] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([GridToPlatform] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([GridToProsumer] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([GridTrafficLightForecast] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([GridTrafficLightRealTime] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([InverterSetpoints] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([LoadbankSetpoints] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([Location] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([LongValue] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE)
+	(%3AJADE-JAVA-CODE "/**\n	 * Instantiates a new long value.\n	 */\n	public LongValue() {\n		\n	}\n	\n	/**\n	 * Instantiates a new long value.\n	 * @param value the value\n	 */\n	public LongValue(long value) {\n		this.setLongValue(value);\n	}\n\n/**\n * Gets the long value.\n * @return the long value\n */\n   public long getLongValue() {\n	   return Long.parseLong(this.getLongAsString());\n   }\n   /**\n    * Sets the long value.\n    * @param longValue the new long value\n    */\n   public void setLongValue(long longValue) {\n	   this.longAsString = \"\" + longValue;\n   }"))
+
+([LvrSetpoints] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([MarketProsumerResult] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([MatlabApiConfiguration] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([OrderBook] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([OrderBookRequest] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([PeakCommunicationOntology_Instance_2] of  %3APAL-CONSTRAINT
+)
+
+([PeakMember] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([PeakMemberAnswer] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([PeakMemberInteraction] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([PeakMemberRegistration] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([PeakMemberRequest] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([PeakPlatformInteraction] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([PlattformSglInteraction] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([PlattformToSgl] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([PowerAdjustment] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([PowerFactorSetpointTriPhaseAcl] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([PowerFlow] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE)
+	(%3AJADE-JAVA-CODE "// Power Flow in KW"))
+
+([project+annotation] of  %3APROJECT-ANNOTATION
+
+	(%3ALOCATION "C:\\Users\\asman\\18_Git_Peak\\peak\\eclipseProjects\\net.peak\\bundles\\net.peak.datamodel\\src")
+	(%3AONTOLOGYNAME "Communication")
+	(%3APACKAGE "net.peak.datamodel.communication")
+	(%3ASUPPORT "j2se"))
+
+([ProsumerMarketInteraction] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([ProsumerMarketTransaction] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([ProsumerToMarket] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([PutActuatorFeedback] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([PutActuatorSetpoint] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([PutAllHardwareSetpoints] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([PutEnergyResult] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([PutEnergyTransaction] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([PutFlexibilityRequest] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([PutFlexibilityResult] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([PutFlexibilityTableRequest] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([PutFlexibilityTransaction] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([PutForecastSchedule] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([PutInverterSetpoints] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([PutLoadbankSetpoints] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([PutLvrSetpoints] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([PutMarketResult] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([PutOrderBook] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([PutResidualProcurementResult] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([PutTradingResult] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([PutTradingTransaction] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([PutTrafficLightForecastMarket] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([PutTrafficLightForecastPlatform] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([PutTrafficLightRealTimeMarket] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([PutTrafficLightRealTimePlatform] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([ResidualResult] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([TimeSeries] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([TimeSeriesInteger] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([TimeSeriesValue] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([TimeSeriesValueFloat] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([TrafficLight] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE)
+	(%3AJADE-JAVA-CODE "public static String GREEN = \"TrafficLightGreen\";\npublic static String YELLOW = \"TrafficLightYellow\";\npublic static String RED = \"TrafficLightRed\";"))
+
+([UnitValue] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([UnitValueFloat] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
+
+([UnitValueInteger] of  %3AJADE-CLASS
+
+	(%3AJADE-IGNORE FALSE))
